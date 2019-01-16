@@ -11,8 +11,7 @@ public class ArrayBasic {
     public static final String STR_2 = "str2";
     private static String str1;
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         testArrayImpl();
 
     }
@@ -36,8 +35,8 @@ public class ArrayBasic {
 
         array.display();
 
-       Random r = new Random();
-       r.nextInt();
+        Random r = new Random();
+        r.nextInt();
 
         System.out.println("contains 3: " + array.contains(3));
 
@@ -53,7 +52,7 @@ public class ArrayBasic {
 
         array.display();
 
-        while ( !array.isEmpty() ) {
+        while (!array.isEmpty()) {
             array.remove();
         }
         array.display();

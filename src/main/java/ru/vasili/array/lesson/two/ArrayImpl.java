@@ -26,7 +26,7 @@ public class ArrayImpl implements Array {
 
     @Override
     public int get() {
-        if ( !isEmpty() ) {
+        if (!isEmpty()) {
             return data[currentSize - 1];
         }
         return 0;
@@ -34,7 +34,7 @@ public class ArrayImpl implements Array {
 
     @Override
     public int get(int index) {
-        if ( index >= 0 && index < currentSize ) {
+        if (index >= 0 && index < currentSize) {
             return data[index];
         }
 
@@ -44,7 +44,7 @@ public class ArrayImpl implements Array {
     @Override
     public int indexOf(int value) {
         for (int i = 0; i < currentSize; i++) {
-            if ( data[i] == value ) {
+            if (data[i] == value) {
                 return i;
             }
         }
@@ -59,7 +59,7 @@ public class ArrayImpl implements Array {
     @Override
     public boolean remove(int value) {
         int index = indexOf(value);
-        if ( index == -1 ) {
+        if (index == -1) {
             return false;
         }
 
@@ -73,7 +73,7 @@ public class ArrayImpl implements Array {
 
     @Override
     public void remove() {
-        if ( !isEmpty() ) {
+        if (!isEmpty()) {
             currentSize--;
         }
     }
@@ -106,7 +106,7 @@ public class ArrayImpl implements Array {
     public void sortBubble() {
         for (int i = 0; i < currentSize - 1; i++) {
             for (int j = 0; j < currentSize - 1 - i; j++) {
-                if ( data[j] > data[j + 1] ) {
+                if (data[j] > data[j + 1]) {
                     swap(j, j + 1);
                 }
             }
@@ -119,7 +119,7 @@ public class ArrayImpl implements Array {
         for (int i = 0; i < currentSize - 1; i++) {
             int minIndex = i;
             for (int j = i + 1; j < currentSize; j++) {
-                if ( data[j] < data[minIndex] ) {
+                if (data[j] < data[minIndex]) {
                     minIndex = j;
                 }
             }

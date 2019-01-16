@@ -2,9 +2,10 @@ package ru.vasili.array.lesson.two;
 
 
 import java.util.Random;
-import java.util.concurrent.*;
+import java.util.concurrent.TimeUnit;
 
-class MainDZ {private static final int ARRAY_CAPACITY = 100_000;
+class MainDZ {
+    private static final int ARRAY_CAPACITY = 100_000;
 
 
     public static final int MAX_VALUE = 1000;

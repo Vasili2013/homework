@@ -39,8 +39,7 @@ class SortedArrayImpl extends ArrayImpl {
 
             if (value < data[mid]) {
                 high = mid - 1;
-            }
-            else {
+            } else {
                 low = mid + 1;
             }
         }
